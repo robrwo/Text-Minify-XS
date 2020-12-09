@@ -6,6 +6,17 @@
 #include <string.h>
 #include <stdlib.h>
 
+int isEOL(char c) {
+  if ( (c == '\n') || (c == '\r') ) return 1;
+  return 0;
+}
+
+int isWhitespace(char c) {
+  if ( (c == ' ') || (c == '\t') || isEOL(c)) return 1;
+  return 0;
+}
+
+
 char* TextMinify(const char* inStr) {
   size_t len   = strlen(inStr);
   char* outStr = malloc(len);
@@ -19,12 +30,12 @@ char* TextMinify(const char* inStr) {
   while (*inStr) {
     char c = *inStr;
 
-    if (skip && (c != '\n') && (c != '\r') && (c != ' ') && (c != '\t'))
+    if (skip && !isWhitespace(c))
         skip = 0;
 
     if (!skip) {
       *ptr = c;
-      if (c == '\n') skip = 1;
+      if (isEOL(c)) skip = 1;
       ptr++;
     }
 
