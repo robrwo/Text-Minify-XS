@@ -7,12 +7,14 @@
 #include <stdlib.h>
 
 int isEOL(char c) {
-  if ( (c == '\n') || (c == '\r') ) return 1;
+  if ((c == '\n') || (c == '\r') || (c == '\f') || (c == '\v') || (c == 0x85))
+    return 1;
   return 0;
 }
 
 int isWhitespace(char c) {
-  if ( (c == ' ') || (c == '\t') || isEOL(c)) return 1;
+  if ((c == ' ') || (c == '\t') || isEOL(c))
+    return 1;
   return 0;
 }
 
