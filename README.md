@@ -4,7 +4,7 @@ Text::Minify::XS - Simple text minification
 
 # VERSION
 
-version v0.1.0
+version v0.1.1
 
 # SYNOPSIS
 
@@ -22,9 +22,13 @@ my $out = minify( $in );
 my $out = minify( $in );
 ```
 
-This performs a quick-and-dirty text minifying.
+This is a quick-and-dirty text minifier that removes whitespace in a
+single pass.
 
-Currently, it only removes leading whitespace and multiple newlines.
+Currently, it only removes leading whitespace (indentation) and
+multiple newlines.
+
+It does not know recognise any form of markup, comments or text quoting.
 
 # KNOWN ISSUES
 

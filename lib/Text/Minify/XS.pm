@@ -28,9 +28,13 @@ XSLoader::load( "Text::Minify::XS", $VERSION );
 
   my $out = minify( $in );
 
-This performs a quick-and-dirty text minifying.
+This is a quick-and-dirty text minifier that removes whitespace in a
+single pass.
 
-Currently, it only removes leading whitespace and multiple newlines.
+Currently, it only removes leading whitespace (indentation) and
+multiple newlines.
+
+It does not know recognise any form of markup, comments or text quoting.
 
 =head1 KNOWN ISSUES
 

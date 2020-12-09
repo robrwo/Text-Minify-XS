@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Updated documentation.
 
 v0.1.0    2020-12-09 13:58:21+00:00 Europe/London
 - Initial version released.
