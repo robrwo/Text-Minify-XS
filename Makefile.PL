@@ -6,6 +6,7 @@ WriteMakefile
   'PREREQ_PM' => {
                    'ExtUtils::CBuilder' => 0,
                    'Test::More' => 0,
+                   'XSLoader' => 0,
                  },
   'INSTALLDIRS' => 'site',
   'EXE_FILES' => [],

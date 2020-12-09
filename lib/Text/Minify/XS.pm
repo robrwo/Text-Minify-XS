@@ -5,13 +5,13 @@ use strict;
 use warnings;
 
 require Exporter;
-require DynaLoader;
+require XSLoader;
 
-our @ISA = qw(Exporter DynaLoader);
+our @ISA = qw(Exporter);
 our @EXPORT_OK = qw(minify);
 
 our $VERSION = 'v0.1.0';
 
-bootstrap Text::Minify::XS $VERSION;
+XSLoader::load Text::Minify::XS, $VERSION;
 
 1;
