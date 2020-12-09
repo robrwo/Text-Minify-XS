@@ -1,6 +1,10 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Incompatabilities]
+  - The XS code uses newer Perl API memory allocation functions,
+    but is only usable in Perl v5.9.3 or later.
+
   [Documentation]
   - Fixed typo.
 

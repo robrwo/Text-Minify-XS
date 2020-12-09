@@ -2,7 +2,7 @@ package Text::Minify::XS;
 
 # ABSTRACT: Simple text minification
 
-use v5.6;
+use v5.9.3;
 use strict;
 use warnings;
 

@@ -3,7 +3,7 @@
 
 requires "Exporter" => "0";
 requires "XSLoader" => "0";
-requires "perl" => "v5.6.0";
+requires "perl" => "v5.9.3";
 requires "strict" => "0";
 requires "warnings" => "0";
 

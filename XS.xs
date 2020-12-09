@@ -21,9 +21,11 @@ int isWhitespace(char c) {
 
 char* TextMinify(const char* inStr) {
   size_t len   = strlen(inStr);
-  char* outStr = malloc(len);
+  char* outStr;
 
-  if (!outStr) // malloc failed
+  Newx(outStr, 1, char);
+
+  if (!outStr) /* malloc failed */
     return outStr;
 
   char* ptr = outStr;
