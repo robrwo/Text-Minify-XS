@@ -14,6 +14,6 @@ our @EXPORT_OK = qw(minify);
 
 our $VERSION = 'v0.1.0';
 
-XSLoader::load Text::Minify::XS, $VERSION;
+XSLoader::load( "Text::Minify::XS", $VERSION );
 
 1;
