@@ -32,4 +32,8 @@ This performs a quick-and-dirty text minifying.
 
 Currently, it only removes leading whitespace and multiple newlines.
 
+=head1 KNOWN ISSUES
+
+This only supports ASCII/Latin-1 text.
+
 =cut
