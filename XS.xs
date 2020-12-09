@@ -57,6 +57,11 @@ char* TextMinify(const char* inStr) {
     inStr++;
   }
 
+  if (trailing) {
+    ptr = trailing;
+    if (isEOL(*ptr)) ptr++;
+  }
+
   *ptr = '\0';
 
   return outStr;
