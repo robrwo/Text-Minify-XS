@@ -27,17 +27,17 @@ char* TextMinify(const char* inStr) {
     return outStr;
 
   char* ptr = outStr;
-  int skip = 1;
+  char* leading = ptr;
 
   while (*inStr) {
     char c = *inStr;
 
-    if (skip && !isWhitespace(c))
-        skip = 0;
+    if (leading && !isWhitespace(c))
+        leading = NULL;
 
-    if (!skip) {
+    if (!leading) {
       *ptr = c;
-      if (isEOL(c)) skip = 1;
+      if (isEOL(c)) leading = ptr;
       ptr++;
     }
 
