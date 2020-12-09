@@ -1,6 +1,11 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Enhancements]
+  - Trailing whitespace is removed.
+
+  - EOL characters are changed to "\n".
+
   [Documentation]
   - Updated documentation.
 

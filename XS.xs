@@ -28,6 +28,7 @@ char* TextMinify(const char* inStr) {
 
   char* ptr = outStr;
   char* leading = ptr;
+  char* trailing = NULL;
 
   while (*inStr) {
     char c = *inStr;
@@ -37,7 +38,19 @@ char* TextMinify(const char* inStr) {
 
     if (!leading) {
       *ptr = c;
-      if (isEOL(c)) leading = ptr;
+      if (isEOL(c)) {
+        if (trailing) {
+          ptr = trailing;
+        }
+        *ptr = '\n';
+        leading = ptr;
+      }
+      else if (isWhitespace(c)) {
+        if (!trailing) trailing = ptr;
+      }
+      else {
+        trailing = NULL;
+      }
       ptr++;
     }
 
