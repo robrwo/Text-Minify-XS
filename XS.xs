@@ -23,7 +23,7 @@ char* TextMinify(const char* inStr) {
   size_t len   = strlen(inStr);
   char* outStr;
 
-  Newx(outStr, 1, char);
+  Newx(outStr, len, char);
 
   if (!outStr) /* malloc failed */
     return outStr;
