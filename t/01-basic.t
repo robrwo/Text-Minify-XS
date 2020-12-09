@@ -14,4 +14,6 @@ is minify("simple  \n") => "simple\n";
 
 is minify("simple  \nstuff  ") => "simple\nstuff";
 
+is minify("\r\n\r\n\t0\r\n\t\t1\r\n") => "0\n1\n";
+
 done_testing;

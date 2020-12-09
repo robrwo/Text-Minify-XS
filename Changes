@@ -8,6 +8,9 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Fixed typo.
 
+  [Tests]
+  - Added more test cases.
+
 v0.2.0    2020-12-09 15:11:35+00:00 Europe/London
   [Enhancements]
   - Trailing whitespace is removed.
