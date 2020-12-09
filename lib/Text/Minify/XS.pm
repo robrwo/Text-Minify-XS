@@ -1,6 +1,8 @@
 package Text::Minify::XS;
 
-use v5.10;
+# ABSTRACT: Minify text
+
+use v5.6;
 use strict;
 use warnings;
 
