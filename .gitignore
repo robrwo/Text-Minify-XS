@@ -1,0 +1,9 @@
+Text-Minify-XS-*/
+Text-Minify-XS-*.tar.gz
+.build/
+cpanfile.snapshot
+Makefile
+*.bak
+blib/
+pm_to_blib
+MYMETA.*
