@@ -32,7 +32,7 @@ It does the following:
 - removes multiple newlines,
 - and changes all line endings to a newline, "\\n",
 
-It does not know recognise any form of markup, comments or text quoting.
+It does not recognise any form of markup, comments or text quoting.
 
 # KNOWN ISSUES
 

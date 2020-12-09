@@ -45,7 +45,7 @@ It does the following:
 
 =back
 
-It does not know recognise any form of markup, comments or text quoting.
+It does not recognise any form of markup, comments or text quoting.
 
 =head1 KNOWN ISSUES
 
