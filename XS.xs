@@ -6,33 +6,44 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define isEOL(c) ((c == '\n') || (c == '\r') || (c == '\f') || (c == '\v') || (c == 0x85))
+#define isEOL(c) ((c >= 0xa) && (c <= 0xd ) || (c == 0x85) || c == 0x2028 || c == 0x2029)
 
-char* TextMinify(const char* inStr) {
-  size_t len   = strlen(inStr);
-  char* outStr;
+STATIC U8* TextMinify(pTHX_ U8* src, STRLEN len, STRLEN* packed) {
+  U8* dest;
 
-  Newx(outStr, len, char);
+  Newx(dest, len, U8);
 
-  if (!outStr) /* malloc failed */
-    return outStr;
+  if (!dest) /* malloc failed */
+    return dest;
 
-  char* ptr = outStr;
-  char* leading = ptr;
-  char* trailing = NULL;
+  U8* end = src + len;
+  U8* ptr = dest;
+  U8* leading = ptr;
+  U8* trailing = NULL;
 
-  while (*inStr) {
-    char c = *inStr;
+  while (len) {
+
+    UV c = *src;
+
+    if (!UTF8_IS_INVARIANT(c)) {
+       STRLEN skip;
+       c = utf8_to_uvchr_buf(src, end, &skip);
+       src += skip;
+       len -= skip;
+    }
+    else {
+      src ++;
+      len --;
+    }
 
     if (leading && !isSPACE(c))
         leading = NULL;
 
     if (!leading) {
+
       if (isEOL(c)) {
-        if (trailing) {
-          ptr = trailing;
-        }
-        if (c == '\r') c = '\n'; /* Normalise CR+LF */
+        if (trailing) ptr = trailing;
+        if ( c == '\r' ) c = '\n'; // Normalise EOL
         leading = ptr;
       }
       else if (isSPACE(c)) {
@@ -41,22 +52,31 @@ char* TextMinify(const char* inStr) {
       else {
         trailing = NULL;
       }
-      *ptr++ = c;
+
+      if (!UTF8_IS_INVARIANT(c))
+        ptr = uvchr_to_utf8( ptr, c);
+      else
+        *ptr++ = c;
+
     }
 
-    inStr++;
   }
 
   if (trailing) {
     ptr = trailing;
-    if (isEOL(*ptr)) ptr++;
+    UV c = *ptr;
+    STRLEN skip = UTF8SKIP(ptr);
+    if (!UTF8_IS_INVARIANT(c))
+      c = utf8_to_uvchr_buf(ptr, ptr + skip, &skip);
+    if (isEOL(c)) {
+      ptr += skip;
+    }
   }
 
-  *ptr = '\0';
+  *packed = ptr - dest;
 
-  return outStr;
+  return dest;
 }
-
 MODULE = Text::Minify::XS PACKAGE = Text::Minify::XS
 
 PROTOTYPES: ENABLE
@@ -68,11 +88,15 @@ minify(inStr)
     char* outStr = NULL;
     RETVAL = &PL_sv_undef;
   CODE:
+    char*  src = SvPVX(inStr);
+    STRLEN len = SvCUR(inStr);
+    STRLEN packed = 0;
     U32 is_utf8 = SvUTF8(inStr);
-    outStr = TextMinify( SvPVX(inStr) );
+    outStr = TextMinify(aTHX_ src, len, &packed);
     if (outStr != NULL) {
-      SV* result = newSVpv(outStr, 0);
-      if (is_utf8) SvUTF8_on(result);
+      SV* result = newSVpv(outStr, packed);
+      if (is_utf8)
+        SvUTF8_on(result);
       RETVAL = result;
       Safefree(outStr);
     }

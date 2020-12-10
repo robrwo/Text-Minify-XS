@@ -34,10 +34,6 @@ It does the following:
 
 It does not recognise any form of markup, comments or text quoting.
 
-# KNOWN ISSUES
-
-This only supports ASCII/Latin-1 text.
-
 # SOURCE
 
 The development version is on github at [https://github.com/robrwo/Text-Minify-XS](https://github.com/robrwo/Text-Minify-XS)

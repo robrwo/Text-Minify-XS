@@ -47,8 +47,4 @@ It does the following:
 
 It does not recognise any form of markup, comments or text quoting.
 
-=head1 KNOWN ISSUES
-
-This only supports ASCII/Latin-1 text.
-
 =cut

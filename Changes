@@ -1,6 +1,11 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Bug Fixes]
+  - Handle strings with embedded null "\0" characters.
+
+  [Enhancements]
+  - Add support for utf8 characters, GH#2.
 
 v0.2.3    2020-12-10 12:23:47+00:00 Europe/London
   [Bug Fixes]
