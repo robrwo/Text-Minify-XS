@@ -6,18 +6,9 @@
 #include <string.h>
 #include <stdlib.h>
 
-int isEOL(char c) {
-  if ((c == '\n') || (c == '\r') || (c == '\f') || (c == '\v') || (c == 0x85))
-    return 1;
-  return 0;
-}
+#define isEOL(c) ((c == '\n') || (c == '\r') || (c == '\f') || (c == '\v') || (c == 0x85))
 
-int isWhitespace(char c) {
-  if ((c == ' ') || (c == '\t') || isEOL(c))
-    return 1;
-  return 0;
-}
-
+#define isWhitespace(c) ((c == ' ') || (c == '\t') || isEOL(c))
 
 char* TextMinify(const char* inStr) {
   size_t len   = strlen(inStr);
