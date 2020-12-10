@@ -2,6 +2,8 @@
 #include "EXTERN.h"         // globals/constant import locations
 #include "perl.h"           // Perl symbols, structures and constants definition
 #include "XSUB.h"           // xsubpp functions and macros
+#define NEED_utf8_to_uvchr_buf
+#include "ppport.h"
 
 #include <string.h>
 #include <stdlib.h>
@@ -43,7 +45,7 @@ STATIC U8* TextMinify(pTHX_ U8* src, STRLEN len, STRLEN* packed) {
 
       if (isEOL(c)) {
         if (trailing) ptr = trailing;
-        if ( c == '\r' ) c = '\n'; // Normalise EOL
+        if ( c == '\r' ) c = '\n'; /* Normalise EOL */
         leading = ptr;
       }
       else if (isSPACE(c)) {
