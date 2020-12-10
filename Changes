@@ -4,6 +4,8 @@ Revision history for {{ $dist->name }}:
   [Bug Fixes]
   - Set utf8 flag on result if the input is utf8.
 
+  - Only normalise "\r" into "\n".
+
   [Enhancements]
   - Change internal functions to macros.
 

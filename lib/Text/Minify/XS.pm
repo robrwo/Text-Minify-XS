@@ -41,7 +41,7 @@ It does the following:
 
 =item removes multiple newlines,
 
-=item and changes all line endings to a newline, "\n",
+=item and changes carriage returns to newlines.
 
 =back
 

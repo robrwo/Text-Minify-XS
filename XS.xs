@@ -30,12 +30,11 @@ char* TextMinify(const char* inStr) {
         leading = NULL;
 
     if (!leading) {
-      *ptr = c;
       if (isEOL(c)) {
         if (trailing) {
           ptr = trailing;
         }
-        *ptr = '\n';
+        if (c == '\r') c = '\n'; /* Normalise CR+LF */
         leading = ptr;
       }
       else if (isWhitespace(c)) {
@@ -44,7 +43,7 @@ char* TextMinify(const char* inStr) {
       else {
         trailing = NULL;
       }
-      ptr++;
+      *ptr++ = c;
     }
 
     inStr++;

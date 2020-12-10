@@ -30,7 +30,7 @@ It does the following:
 - removes leading whitespace (indentation),
 - removes trailing whitespace,
 - removes multiple newlines,
-- and changes all line endings to a newline, "\\n",
+- and changes carriage returns to newlines.
 
 It does not recognise any form of markup, comments or text quoting.
 
