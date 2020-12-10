@@ -30,4 +30,15 @@ is minify(" £ simple") => "£ simple";
     is minify(" " . $str) => $str;
 }
 
+{
+    local $TODO = "Support unicode line endings";
+    my $n = chr(0x2028);
+    is minify("${n}x   ${n}") => "${n}x${n}";
+}
+
+{
+    local $TODO = "Support embedded null characters";
+    is minify(" \0 x") => "\0 x";
+}
+
 done_testing;
