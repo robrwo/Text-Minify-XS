@@ -8,8 +8,6 @@
 
 #define isEOL(c) ((c == '\n') || (c == '\r') || (c == '\f') || (c == '\v') || (c == 0x85))
 
-#define isWhitespace(c) ((c == ' ') || (c == '\t') || isEOL(c))
-
 char* TextMinify(const char* inStr) {
   size_t len   = strlen(inStr);
   char* outStr;
@@ -26,7 +24,7 @@ char* TextMinify(const char* inStr) {
   while (*inStr) {
     char c = *inStr;
 
-    if (leading && !isWhitespace(c))
+    if (leading && !isSPACE(c))
         leading = NULL;
 
     if (!leading) {
@@ -37,7 +35,7 @@ char* TextMinify(const char* inStr) {
         if (c == '\r') c = '\n'; /* Normalise CR+LF */
         leading = ptr;
       }
-      else if (isWhitespace(c)) {
+      else if (isSPACE(c)) {
         if (!trailing) trailing = ptr;
       }
       else {

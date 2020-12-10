@@ -9,6 +9,8 @@ Revision history for {{ $dist->name }}:
   [Enhancements]
   - Change internal functions to macros.
 
+  - Use Perl API macro for identifying whitespace.
+
 v0.2.2    2020-12-09 23:01:04+00:00 Europe/London
   [Bug Fixes]
   - Allocate the correct size.
