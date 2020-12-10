@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Bug Fixes]
+  - Recover from malformed UTF-8 characters, GH#4.
+
   [Other]
   - Reorganise the internals.
 

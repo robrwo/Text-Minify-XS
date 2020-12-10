@@ -47,4 +47,10 @@ It does the following:
 
 It does not recognise any form of markup, comments or text quoting.
 
+=head1 KNOWN ISSUES
+
+Malformed UTF-8 characters may be be mangled or omitted from the
+output. You should ensure that the input string is properly encoded as
+UTF-8.
+
 =cut

@@ -34,6 +34,12 @@ It does the following:
 
 It does not recognise any form of markup, comments or text quoting.
 
+# KNOWN ISSUES
+
+Malformed UTF-8 characters may be be mangled or omitted from the
+output. You should ensure that the input string is properly encoded as
+UTF-8.
+
 # SOURCE
 
 The development version is on github at [https://github.com/robrwo/Text-Minify-XS](https://github.com/robrwo/Text-Minify-XS)
