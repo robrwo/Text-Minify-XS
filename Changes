@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Other]
+  - Reorganise the internals.
 
 v0.3.0    2020-12-10 12:42:34+00:00 Europe/London
   [Bug Fixes]
