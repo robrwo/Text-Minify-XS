@@ -80,9 +80,12 @@ minify(inStr)
     char* outStr = NULL;
     RETVAL = &PL_sv_undef;
   CODE:
+    U32 is_utf8 = SvUTF8(inStr);
     outStr = TextMinify( SvPVX(inStr) );
     if (outStr != NULL) {
-      RETVAL = newSVpv(outStr, 0);
+      SV* result = newSVpv(outStr, 0);
+      if (is_utf8) SvUTF8_on(result);
+      RETVAL = result;
       Safefree(outStr);
     }
   OUTPUT:
