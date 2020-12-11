@@ -47,7 +47,7 @@ my $warning = warning {
     my $n = chr(160);
     my $r = minify($n);
 };
-like $warning, qr/Malformed UTF-8 character: \\xa0/;
+like $warning, qr/Malformed UTF-8 character/;
 
 {
     my $n = encode_utf8(chr(160));
