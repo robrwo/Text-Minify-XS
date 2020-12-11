@@ -4,6 +4,9 @@ Revision history for {{ $dist->name }}:
   [Tests]
   - Add author ppport test.
 
+  [Other]
+  - Update Dist::Zilla config to include `ppport.h`.
+
 v0.3.2    2020-12-11 09:28:45+00:00 Europe/London
   [Tests]
   - Fix tests on some older Perl versions.
