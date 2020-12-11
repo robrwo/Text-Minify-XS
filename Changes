@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Tests]
+  - Add author ppport test.
 
 v0.3.2    2020-12-11 09:28:45+00:00 Europe/London
   [Tests]
