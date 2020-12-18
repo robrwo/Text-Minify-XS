@@ -49,6 +49,15 @@ It does not recognise any form of markup, comments or text quoting.
 
 =head1 KNOWN ISSUES
 
+=head2 Support for older Perl versions
+
+This module requires Perl v5.9.3 or newer.
+
+Pull requests to support older versions of Perl are welcome. See
+L</SOURCE>.
+
+=head2 Malformed UTF-8
+
 Malformed UTF-8 characters may be be mangled or omitted from the
 output. You should ensure that the input string is properly encoded as
 UTF-8.

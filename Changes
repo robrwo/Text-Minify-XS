@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Add note to KNOWN ISSUES about older Perl versions.
+
   [Tests]
   - Add author ppport test.
 
