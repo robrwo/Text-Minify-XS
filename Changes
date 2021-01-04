@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Bug Fixes]
+  - Handle empty strings and strings containing only spaces.
+
   [Documentation]
   - Add note to KNOWN ISSUES about older Perl versions.
 
