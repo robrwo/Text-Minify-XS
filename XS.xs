@@ -27,6 +27,7 @@ STATIC U8* TextMinify(pTHX_ U8* src, STRLEN len, STRLEN* packed) {
   U8* trailing = NULL;
 
   if (len == 0) {
+    *packed = len;
     return src;
   }
 
