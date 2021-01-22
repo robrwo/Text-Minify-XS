@@ -64,6 +64,8 @@ UTF-8.
 
 =head1 SEE ALSO
 
+L<String::Strip>
+
 L<Text::Trim>
 
 =cut

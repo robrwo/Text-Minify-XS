@@ -51,6 +51,8 @@ UTF-8.
 
 # SEE ALSO
 
+[String::Strip](https://metacpan.org/pod/String::Strip)
+
 [Text::Trim](https://metacpan.org/pod/Text::Trim)
 
 # SOURCE
