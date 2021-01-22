@@ -62,4 +62,8 @@ Malformed UTF-8 characters may be be mangled or omitted from the
 output. You should ensure that the input string is properly encoded as
 UTF-8.
 
+=head1 SEE ALSO
+
+L<Text::Trim>
+
 =cut
