@@ -29,10 +29,6 @@ is minify("\r\n\r\n\t0\r\n\t\t1\r\n") => "0\n1\n";
 
 is minify(" £ simple") => "£ simple";
 
-is minify("\0") => "\0", "null";
-
-is minify(" \0 ") => "\0", "null";
-
 {
     my $str = chr(0x2020) . "x";
     is minify(" " . $str) => $str;
@@ -50,6 +46,11 @@ is minify(" \0 ") => "\0", "null";
 
 {
     is minify(" \0 x") => "\0 x";
+
+    is minify("\0") => "\0", "null";
+
+    is minify(" \0 ") => "\0", "null";
+
 }
 
 my $warning = warning {
