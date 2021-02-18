@@ -54,7 +54,6 @@ is minify(" £ simple") => "£ simple";
 }
 
 my $warning = warning {
-    local $TODO = "Bad encoding";
     my $n = chr(160);
     my $r = minify($n);
 };
