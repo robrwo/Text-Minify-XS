@@ -66,6 +66,8 @@ UTF-8.
 
 L<String::Strip>
 
+L<String::Util>
+
 L<Text::Trim>
 
 =cut
