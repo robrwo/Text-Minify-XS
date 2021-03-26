@@ -33,6 +33,7 @@ It does the following:
 - and changes carriage returns to newlines.
 
 It does not recognise any form of markup, comments or text quoting.
+Nor does it remove extra whitespace in the middle of the line.
 
 # KNOWN ISSUES
 

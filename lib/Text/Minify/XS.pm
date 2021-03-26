@@ -46,6 +46,7 @@ It does the following:
 =back
 
 It does not recognise any form of markup, comments or text quoting.
+Nor does it remove extra whitespace in the middle of the line.
 
 =head1 KNOWN ISSUES
 
