@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+
+v0.3.8    2021-04-21 16:46:53+01:00 Europe/London
   [Documentation]
   - Updated SEE ALSO section.
 
