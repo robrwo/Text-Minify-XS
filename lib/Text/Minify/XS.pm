@@ -35,13 +35,21 @@ It does the following:
 
 =over
 
-=item removes leading whitespace (indentation),
+=item *
 
-=item removes trailing whitespace,
+removes leading whitespace (indentation),
 
-=item removes multiple newlines,
+=item *
 
-=item and changes carriage returns to newlines.
+removes trailing whitespace,
+
+=item *
+
+removes multiple newlines,
+
+=item *
+
+and changes carriage returns to newlines.
 
 =back
 
