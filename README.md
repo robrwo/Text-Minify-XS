@@ -54,6 +54,10 @@ UTF-8.
 
 [String::Strip](https://metacpan.org/pod/String::Strip)
 
+[String::Trim](https://metacpan.org/pod/String::Trim)
+
+[String::Trim::Regex](https://metacpan.org/pod/String::Trim::Regex)
+
 [String::Util](https://metacpan.org/pod/String::Util)
 
 [Text::Trim](https://metacpan.org/pod/Text::Trim)

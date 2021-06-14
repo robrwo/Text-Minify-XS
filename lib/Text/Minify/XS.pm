@@ -75,6 +75,10 @@ UTF-8.
 
 L<String::Strip>
 
+L<String::Trim>
+
+L<String::Trim::Regex>
+
 L<String::Util>
 
 L<Text::Trim>
