@@ -4,6 +4,9 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Updated SEE ALSO section.
 
+  [Other Changes]
+  - Improved module metadata.
+
 v0.4.1    2021-05-06 12:58:09+01:00 Europe/London
   [Documentation]
   - Improved formatting.
