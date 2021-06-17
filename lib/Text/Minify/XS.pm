@@ -73,16 +73,60 @@ UTF-8.
 
 =head1 SEE ALSO
 
-L<String::Strip>
+There are many string trimming and specialised
+whitespace/comment-removal modules on CPAN.  Some of them are:
 
-L<String::Trim>
+=head2 CSS
 
-String::Trim::Regex
+=over
 
-L<String::Trim::NonRegex>
+=item L<CSS::Minifier>
 
-L<String::Util>
+=item L<CSS::Minifier::XS>
 
-L<Text::Trim>
+=item L<CSS::Packer>
+
+=back
+
+=head2 HTML
+
+=over
+
+=item L<HTML::Packer>
+
+=back
+
+=head2 JavaScript
+
+=over
+
+=item L<JavaScript::Minifier>
+
+=item L<JavaScript::Minifier::XS>
+
+=item L<JavaScript::Packer>
+
+=back
+
+=head2 Plain Text
+
+=over
+
+=item L<String::Strip>
+
+=item L<String::Trim>
+
+=item String::Trim::Regex
+
+=item L<String::Trim::NonRegex>
+
+=item L<String::Util>
+
+=item L<Text::Trim>
+
+=back
+
+This list does not include specialised template filters or plugins to
+web frameworks.
 
 =cut

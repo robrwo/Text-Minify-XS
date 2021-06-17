@@ -52,17 +52,36 @@ UTF-8.
 
 # SEE ALSO
 
-[String::Strip](https://metacpan.org/pod/String::Strip)
+There are many string trimming and specialised
+whitespace/comment-removal modules on CPAN.  Some of them are:
 
-[String::Trim](https://metacpan.org/pod/String::Trim)
+## CSS
 
-String::Trim::Regex
+- [CSS::Minifier](https://metacpan.org/pod/CSS::Minifier)
+- [CSS::Minifier::XS](https://metacpan.org/pod/CSS::Minifier::XS)
+- [CSS::Packer](https://metacpan.org/pod/CSS::Packer)
 
-[String::Trim::NonRegex](https://metacpan.org/pod/String::Trim::NonRegex)
+## HTML
 
-[String::Util](https://metacpan.org/pod/String::Util)
+- [HTML::Packer](https://metacpan.org/pod/HTML::Packer)
 
-[Text::Trim](https://metacpan.org/pod/Text::Trim)
+## JavaScript
+
+- [JavaScript::Minifier](https://metacpan.org/pod/JavaScript::Minifier)
+- [JavaScript::Minifier::XS](https://metacpan.org/pod/JavaScript::Minifier::XS)
+- [JavaScript::Packer](https://metacpan.org/pod/JavaScript::Packer)
+
+## Plain Text
+
+- [String::Strip](https://metacpan.org/pod/String::Strip)
+- [String::Trim](https://metacpan.org/pod/String::Trim)
+- String::Trim::Regex
+- [String::Trim::NonRegex](https://metacpan.org/pod/String::Trim::NonRegex)
+- [String::Util](https://metacpan.org/pod/String::Util)
+- [Text::Trim](https://metacpan.org/pod/Text::Trim)
+
+This list does not include specialised template filters or plugins to
+web frameworks.
 
 # SOURCE
 
