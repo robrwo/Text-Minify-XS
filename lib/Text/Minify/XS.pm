@@ -77,6 +77,10 @@ L<String::Strip>
 
 L<String::Trim>
 
+String::Trim::Regex
+
+L<String::Trim::NonRegex>
+
 L<String::Util>
 
 L<Text::Trim>
