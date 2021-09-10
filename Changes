@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+
+v0.4.3    2021-09-10 08:38:34+01:00 Europe/London
   [Tests]
   - Improve tests for malformed UTF-8 on some platforms.
 
