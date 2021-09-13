@@ -45,6 +45,11 @@ STATIC U8* TextMinify(pTHX_ U8* src, STRLEN len, STRLEN* packed) {
       if (c != 0) {
         src += skip;
         len -= skip;
+        if (len < 0) {
+          warn("UTF-8 character overflow");
+          src = end;
+          len = 0;
+        }
       }
       else {
         c = *src;

@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Bug Fixes]
+  - Fix possible segfault for malformed UTF-8.
 
 v0.4.4    2021-09-12 11:48:42+01:00 Europe/London
   [Tests]
