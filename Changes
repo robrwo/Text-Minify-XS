@@ -6,9 +6,15 @@ Revision history for {{ $dist->name }}:
 
   - Added references to GH#5 to Changes.
 
+  - Documented potentially incompatible change in v0.4.6.
+
 v0.4.6    2021-09-14 13:25:42+01:00 Europe/London
   [Bug Fixes]
   - Improved fix for possible segfault for malformed UTF-8, GH#5.
+
+  [Incompatabilities]
+  - Croak when `utf8_to_uvchr_buf` believes the string uses more
+    bytes than are in the buffer.
 
 v0.4.5    2021-09-13 10:30:31+01:00 Europe/London
   [Bug Fixes]
