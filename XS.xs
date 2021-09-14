@@ -31,7 +31,7 @@ STATIC U8* TextMinify(pTHX_ U8* src, STRLEN len, STRLEN* packed) {
     return dest;
   }
 
-  while (len) {
+  while (len > 0) {
 
     UV c = *src;
 
