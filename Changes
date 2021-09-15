@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Bug Fixes]
+  - Ensure an extra byte is allocated in the result string.
+
   [Documentation]
   - Fixed typo in Changes.
 

@@ -13,7 +13,7 @@
 STATIC U8* TextMinify(pTHX_ U8* src, STRLEN len, STRLEN* packed) {
   U8* dest;
 
-  Newx(dest, len, U8);
+  Newx(dest, len + 1, U8);
 
   if (!dest) /* malloc failed */
     return dest;
