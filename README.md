@@ -16,6 +16,8 @@ my $out = minify( $in );
 
 # EXPORTS
 
+None by default.
+
 ## minify
 
 ```perl

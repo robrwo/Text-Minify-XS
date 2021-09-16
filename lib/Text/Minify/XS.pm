@@ -24,6 +24,11 @@ XSLoader::load( "Text::Minify::XS", $VERSION );
 
   my $out = minify( $in );
 
+
+=head1 prepend:EXPORTS
+
+None by default.
+
 =export minify
 
   my $out = minify( $in );

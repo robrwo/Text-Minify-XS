@@ -4,6 +4,8 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Document croak from v0.4.6 in the KNOWN ISSUES section.
 
+  - Explicitly state that nothing is exported by default.
+
 v0.4.8    2021-09-16 09:59:39+01:00 Europe/London
   [Bug Fixes]
   - Use safer NewSVpvn function, GH#5.
