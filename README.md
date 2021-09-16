@@ -47,8 +47,9 @@ Pull requests to support older versions of Perl are welcome. See
 ## Malformed UTF-8
 
 Malformed UTF-8 characters may be be mangled or omitted from the
-output. You should ensure that the input string is properly encoded as
-UTF-8.
+output.  In extreme cases it may throw an exception in order to avoid
+memory overflows. You should ensure that the input string is properly
+encoded as UTF-8.
 
 # SEE ALSO
 
