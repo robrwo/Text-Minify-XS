@@ -6,6 +6,9 @@ Revision history for {{ $dist->name }}:
 
   - Explicitly state that nothing is exported by default.
 
+  [Tests]
+  - Add author tests for memory leaks.
+
 v0.4.8    2021-09-16 09:59:39+01:00 Europe/London
   [Bug Fixes]
   - Use safer NewSVpvn function, GH#5.
