@@ -123,7 +123,7 @@ minify(inStr)
     U32 is_utf8 = SvUTF8(inStr);
     outStr = TextMinify(aTHX_ src, len, &packed);
     if (outStr != NULL) {
-      SV* result = newSVpv(outStr, packed);
+      SV* result = newSVpvn(outStr, packed);
       if (is_utf8)
         SvUTF8_on(result);
       RETVAL = result;
