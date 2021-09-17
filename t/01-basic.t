@@ -16,6 +16,8 @@ is minify("\t\t \n") => "", "empty";
 
 is minify("simple") => "simple";
 
+is minify("\nsimple") => "simple";
+
 is minify("\n  simple") => "simple";
 
 is minify("\n  simple\n") => "simple\n";
