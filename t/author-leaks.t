@@ -39,6 +39,10 @@ no_leaks_ok {
         my $n = chr(160);
         my $r = eval { minify($n) };
     };
+    warning {
+        my $n = " " . chr(160) . " ";
+        my $r = eval { minify($n) };
+    };
 };
 
 no_leaks_ok {

@@ -64,6 +64,12 @@ lives_and {
     };
     like $warning, qr/Malformed UTF-8 character/;
 
+    my $warning = warning {
+        my $n = chr(160);
+        my $r = eval { minify("  $n  \n  \n") };
+    };
+    like $warning, qr/Malformed UTF-8 character/;
+
     {
         my $n = eval { encode_utf8( chr(160) ) };
         is minify($n) => $n;
