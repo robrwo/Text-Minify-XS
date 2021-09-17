@@ -41,4 +41,12 @@ no_leaks_ok {
     };
 };
 
+no_leaks_ok {
+
+    minify(" \0 x");
+    minify("\0");
+    minify(" \0 ")
+
+};
+
 done_testing;
