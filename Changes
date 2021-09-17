@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+
+v0.4.9    2021-09-17 22:40:30+01:00 Europe/London (TRIAL RELEASE)
   [Documentation]
   - Document croak from v0.4.6 in the KNOWN ISSUES section.
 
