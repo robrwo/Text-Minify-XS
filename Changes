@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  - No changes to the code since v0.4.8, but you should upgrade ensure
+    you have bug fixes related to handling malformed UTF-8.
 
 v0.4.10   2021-09-18 13:54:07+01:00 Europe/London (TRIAL RELEASE)
   [Tests]
