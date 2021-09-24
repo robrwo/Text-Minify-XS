@@ -4,6 +4,11 @@ Revision history for {{ $dist->name }}:
   [Enhancements]
   - Clean up the code for handling trailing whitespace.
 
+  [Documentation]
+  - Removed section on "Support for older Perl versions". (Perl v5.9.3
+    was released more than 15 years ago, and it's not worth the effort
+    to support older versions.)
+
 v0.5.0    2021-09-19 11:30:42+01:00 Europe/London
   - No changes to the code since v0.4.8, but you should upgrade ensure
     you have bug fixes related to handling malformed UTF-8.
