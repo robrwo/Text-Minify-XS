@@ -12,6 +12,9 @@ Revision history for {{ $dist->name }}:
   [Toolchain]
   - Added merge conflict check before release.
 
+  [Tests]
+  - Encode test strings properly.
+
 v0.5.0    2021-09-19 11:30:42+01:00 Europe/London
   - No changes to the code since v0.4.8, but you should upgrade ensure
     you have bug fixes related to handling malformed UTF-8.

@@ -37,17 +37,17 @@ is minify(" £ ") => "£";
 is minify(" £ simple") => "£ simple";
 
 {
-    my $str = chr(0x2020) . "x";
+    my $str = encode_utf8( chr(0x2020) . "x" );
     is minify(" " . $str) => $str;
 }
 
 {
-    my $str = chr(0x4e20) . "x";
+    my $str = encode_utf8( chr(0x4e20) . "x" );
     is minify(" " . $str) => $str;
 }
 
 {
-    my $n = chr(0x2028);
+    my $n = encode_utf8( chr(0x2028) );
     is minify("${n}x   ${n}${n} ") => "${n}x${n}";
 }
 
