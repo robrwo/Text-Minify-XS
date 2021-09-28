@@ -88,25 +88,20 @@ STATIC U8* TextMinify(pTHX_ U8* src, STRLEN len, STRLEN* packed) {
   }
 
   if (trailing) {
-    UV c = *trailing;
-    STRLEN skip;
+    ptr = trailing;
+    UV c = *ptr;
+    STRLEN skip = UTF8SKIP(ptr);
     if (!UTF8_IS_INVARIANT(c)) {
-      c = utf8_to_uvchr_buf(trailing, end, &skip);
+      c = utf8_to_uvchr_buf(ptr, ptr + skip, &skip);
       if (c == 0) {
-        c = *trailing;
+        c = *ptr;
       }
-    }
-    else {
-      skip = 1;
     }
     if (isEOL(c)) {
       if ((int) skip <= 0) {
         skip = 1;
       }
-      ptr = trailing + skip;
-    }
-    else {
-      ptr = trailing;
+      ptr += skip;
     }
   }
 

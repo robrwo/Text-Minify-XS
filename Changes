@@ -1,8 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
-  [Enhancements]
-  - Clean up the code for handling trailing whitespace.
+  [Bug Fixes]
+  - Improve malformed UTF-8 handling for trailing whitespace.
 
   [Documentation]
   - Removed section on "Support for older Perl versions". (Perl v5.9.3
