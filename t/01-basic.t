@@ -28,6 +28,8 @@ is minify("\n\n  simple\r\n test\n\r") => "simple\ntest\n";
 
 is minify("simple  \n") => "simple\n";
 
+is minify("simple  \r") => "simple\n";
+
 is minify("simple  \nstuff  ") => "simple\nstuff";
 
 is minify("\r\n\r\n\t0\r\n\t\t1\r\n") => "0\n1\n";
@@ -44,6 +46,11 @@ is minify(" £ simple") => "£ simple";
 {
     my $str = encode_utf8( chr(0x4e20) . "x" );
     is minify(" " . $str) => $str;
+}
+
+{
+    my $n = encode_utf8( chr(0x2028) );
+    is minify("${n}x   ${n}${n}") => "${n}x${n}";
 }
 
 {
