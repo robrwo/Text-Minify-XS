@@ -10,7 +10,7 @@
 
 #define isEOL(c) ((c >= 0xa) && (c <= 0xd ) || (c == 0x85) || c == 0x2028 || c == 0x2029)
 
-STATIC U8* TextMinify(pTHX_ U8* src, STRLEN len, STRLEN* packed) {
+STATIC U8* _minify_utf8(pTHX_ U8* src, STRLEN len, STRLEN* packed) {
   U8* dest;
 
   Newx(dest, len + 1, U8);
@@ -124,7 +124,7 @@ minify(inStr)
     STRLEN len = SvCUR(inStr);
     STRLEN packed = 0;
     U32 is_utf8 = SvUTF8(inStr);
-    outStr = TextMinify(aTHX_ src, len, &packed);
+    outStr = _minify_utf8(aTHX_ src, len, &packed);
     if (outStr != NULL) {
       SV* result = newSVpvn(outStr, packed);
       if (is_utf8)
