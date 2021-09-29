@@ -23,8 +23,8 @@ STATIC U8* TextMinify(pTHX_ U8* src, STRLEN len, STRLEN* packed) {
 
   U8* end = src + len;
   U8* ptr = dest;
-  U8* leading = ptr;
-  U8* trailing = NULL;
+  U8* leading = ptr;   /* start of leading whitespace, or NULL if none */
+  U8* trailing = NULL; /* start of trailing whitespace, or NULL if none */
 
   if (len == 0) {
     *packed = len;
