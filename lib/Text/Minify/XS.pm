@@ -1,6 +1,6 @@
 package Text::Minify::XS;
 
-# ABSTRACT: Simple text minification
+# ABSTRACT: remove indentation and trailing whitespace
 
 use v5.9.3;
 use strict;
@@ -33,8 +33,8 @@ None by default.
 
   my $out = minify( $in );
 
-This is a quick-and-dirty text minifier that removes whitespace in a
-single pass.
+This is a quick-and-dirty text minifier that removes indentation and
+trailing whitespace from a multi-line text document in a single pass.
 
 It does the following:
 
