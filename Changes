@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Enhancements]
+  - Add minify_utf8 as an alias for minify, GH#6.
+
   [Documentation]
   - Add an actual DESCRIPTION section.
 

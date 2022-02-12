@@ -10,11 +10,16 @@ require Exporter;
 require XSLoader;
 
 our @ISA = qw(Exporter);
-our @EXPORT_OK = qw(minify);
+our @EXPORT_OK = qw(minify minify_utf8);
 
 our $VERSION = 'v0.5.3';
 
 XSLoader::load( "Text::Minify::XS", $VERSION );
+
+{
+    no strict 'refs';
+    *minify_utf8 = \&minify;
+}
 
 1;
 
@@ -67,6 +72,10 @@ Nor does it remove extra whitespace in the middle of the line.
 
 Because it does not recognise any markup, newlines are removed since
 they may be significant.
+
+=export minify_utf8
+
+This is an alias for L</minify>.
 
 =head1 KNOWN ISSUES
 

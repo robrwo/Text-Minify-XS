@@ -45,6 +45,10 @@ Nor does it remove extra whitespace in the middle of the line.
 Because it does not recognise any markup, newlines are removed since
 they may be significant.
 
+## minify\_utf8
+
+This is an alias for ["minify"](#minify).
+
 # KNOWN ISSUES
 
 ## Malformed UTF-8
