@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Enhancements]
+  - Upgrade Devel::PPPort to 3.64.
+
   [Documentation]
   - Update ABSTRACT and DESCRIPTION to make it clear what this does.
 
