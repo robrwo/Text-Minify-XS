@@ -47,7 +47,7 @@ they may be significant.
 
 ## minify\_utf8
 
-This is an alias for ["minify"](#minify).
+This is an alias for ["minify"](#minify).  It was added in v0.5.3.
 
 # KNOWN ISSUES
 

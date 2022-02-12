@@ -75,7 +75,7 @@ they may be significant.
 
 =export minify_utf8
 
-This is an alias for L</minify>.
+This is an alias for L</minify>.  It was added in v0.5.3.
 
 =head1 KNOWN ISSUES
 
