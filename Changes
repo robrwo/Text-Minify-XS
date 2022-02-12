@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Add an actual DESCRIPTION section.
 
 v0.5.2    2022-02-12 11:38:41+00:00 Europe/London
   [Enhancements]

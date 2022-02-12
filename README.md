@@ -14,6 +14,11 @@ use Text::Minify::XS qw/ minify /;
 my $out = minify( $in );
 ```
 
+# DESCRIPTION
+
+This is a simple and fast text minifier that removes quickly extra
+whitespace from multi-line UTF-8 text.
+
 # EXPORTS
 
 None by default.
