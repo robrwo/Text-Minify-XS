@@ -12,7 +12,7 @@ require XSLoader;
 our @ISA = qw(Exporter);
 our @EXPORT_OK = qw(minify minify_utf8 minify_ascii);
 
-our $VERSION = 'v0.5.3';
+our $VERSION = 'v0.5.4';
 
 XSLoader::load( "Text::Minify::XS", $VERSION );
 
