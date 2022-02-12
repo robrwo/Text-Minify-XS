@@ -4,6 +4,9 @@ Revision history for {{ $dist->name }}:
   [Enhancements]
   - Add minify_utf8 as an alias for minify, GH#6.
 
+  [Bug Fixes]
+  - Use correct name of function in error message.
+
   [Documentation]
   - Add an actual DESCRIPTION section.
 

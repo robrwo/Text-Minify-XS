@@ -134,7 +134,7 @@ minify(inStr)
       Safefree(outStr);
     }
     else {
-      croak("TextMinify returned NULL");
+      croak("_minify_utf8 returned NULL");
     }
   OUTPUT:
     RETVAL
