@@ -42,8 +42,8 @@ It does the following:
 It does not recognise any form of markup, comments or text quoting.
 Nor does it remove extra whitespace in the middle of the line.
 
-Because it does not recognise any markup, newlines are removed since
-they may be significant.
+Because it does not recognise any markup, newlines are not removed
+since they may be significant.
 
 ## minify\_utf8
 
