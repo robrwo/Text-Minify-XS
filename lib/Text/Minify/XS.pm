@@ -65,6 +65,9 @@ and changes carriage returns to newlines.
 It does not recognise any form of markup, comments or text quoting.
 Nor does it remove extra whitespace in the middle of the line.
 
+Because it does not recognise any markup, newlines are removed since
+they may be significant.
+
 =head1 KNOWN ISSUES
 
 =head2 Malformed UTF-8

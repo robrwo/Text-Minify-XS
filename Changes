@@ -6,6 +6,8 @@ Revision history for {{ $dist->name }}:
 
   - Fix error in Changes.
 
+  - Add note about handling of newlines.
+
 v0.5.2    2022-02-12 11:38:41+00:00 Europe/London
   [Enhancements]
   - Upgrade Devel::PPPort to 3.64.
