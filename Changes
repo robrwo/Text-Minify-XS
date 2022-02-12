@@ -7,6 +7,8 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Update ABSTRACT and DESCRIPTION to make it clear what this does.
 
+  - Bump copyright year.
+
 v0.5.1    2021-09-28 22:48:54+01:00 Europe/London
   [Bug Fixes]
   - Improve malformed UTF-8 handling for trailing whitespace.
