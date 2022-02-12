@@ -8,7 +8,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define isEOL(c) ((c >= 0xa) && (c <= 0xd ) || (c == 0x85) || c == 0x2028 || c == 0x2029)
+#define isEOL(c) ((c >= 0xa) && (c <= 0xd ) || (c == 0x85))
+#define isEOL_UTF8(c) (isEOL(c) || c == 0x2028 || c == 0x2029)
 
 STATIC U8* _minify_utf8(pTHX_ U8* src, STRLEN len, STRLEN* packed) {
   U8* dest;
@@ -66,7 +67,7 @@ STATIC U8* _minify_utf8(pTHX_ U8* src, STRLEN len, STRLEN* packed) {
 
     if (!leading) {
 
-      if (isEOL(c)) {
+      if (isEOL_UTF8(c)) {
         if (trailing) ptr = trailing;
         if ( c == '\r' ) c = '\n'; /* Normalise EOL */
         leading = ptr;
@@ -97,7 +98,7 @@ STATIC U8* _minify_utf8(pTHX_ U8* src, STRLEN len, STRLEN* packed) {
         c = *ptr;
       }
     }
-    if (isEOL(c)) {
+    if (isEOL_UTF8(c)) {
       if ((int) skip <= 0) {
         skip = 1;
       }
