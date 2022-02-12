@@ -4,6 +4,9 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Mention benchmarks.
 
+  [Tests]
+  - Enable Perl::Critic author test.
+
   [Other]
   - Included a sample benchmark script.
 
