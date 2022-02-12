@@ -10,7 +10,7 @@ require Exporter;
 require XSLoader;
 
 our @ISA = qw(Exporter);
-our @EXPORT_OK = qw(minify minify_utf8);
+our @EXPORT_OK = qw(minify minify_utf8 minify_ascii);
 
 our $VERSION = 'v0.5.3';
 
@@ -76,6 +76,12 @@ they may be significant.
 =export minify_utf8
 
 This is an alias for L</minify>.  It was added in v0.5.3.
+
+=export minify_ascii
+
+This is a version of L</minify> that works on ASCII text. It was added in v0.5.3.
+
+If you are only processing ASCII text, then it should be faster.
 
 =head1 KNOWN ISSUES
 

@@ -2,7 +2,9 @@ Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
   [Enhancements]
-  - Add minify_utf8 as an alias for minify, GH#6.
+  - Add minify_ascii for minifying ASCII test, GH#6.
+
+  - Add minify_utf8 as an alias for minify.
 
   [Bug Fixes]
   - Use correct name of function in error message.

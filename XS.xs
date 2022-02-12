@@ -11,6 +11,69 @@
 #define isEOL(c) ((c >= 0xa) && (c <= 0xd ) || (c == 0x85))
 #define isEOL_UTF8(c) (isEOL(c) || c == 0x2028 || c == 0x2029)
 
+char* _minify_ascii(const char* src, STRLEN len, STRLEN* packed) {
+
+  char * dest;
+
+  Newx(dest, len + 1, char);
+
+  if (!dest) /* malloc failed */
+    return dest;
+
+  /* initialize to end-of-string in case string contains only spaces */
+  *dest = 0;
+
+  char* end = src + len;
+  char* ptr = dest;
+  char* leading = ptr;   /* start of leading whitespace, or NULL if none */
+  char* trailing = NULL; /* start of trailing whitespace, or NULL if none */
+
+  if (len == 0) {
+    *packed = len;
+    return dest;
+  }
+
+  while (len > 0) {
+
+    char c = *src;
+
+    src ++;
+    len --;
+
+    if (leading && !isSPACE(c))
+      leading = NULL;
+
+    if (!leading) {
+
+      if (isEOL(c)) {
+        if (trailing) ptr = trailing;
+        if ( c == '\r' ) c = '\n'; /* Normalise EOL */
+        leading = ptr;
+      }
+      else if (isSPACE(c)) {
+        if (!trailing) trailing = ptr;
+      }
+      else {
+        trailing = NULL;
+      }
+
+      *ptr++ = c;
+    }
+
+  }
+
+  if (trailing) {
+    ptr = trailing;
+    char c = *ptr;
+    if (isEOL(c)) { ptr++; }
+  }
+
+  *packed = ptr - dest;
+
+  return dest;
+
+}
+
 STATIC U8* _minify_utf8(pTHX_ U8* src, STRLEN len, STRLEN* packed) {
   U8* dest;
 
@@ -135,6 +198,28 @@ minify(inStr)
     }
     else {
       croak("_minify_utf8 returned NULL");
+    }
+  OUTPUT:
+    RETVAL
+
+SV*
+minify_ascii(inStr)
+  SV* inStr
+  INIT:
+    char* outStr = NULL;
+    RETVAL = &PL_sv_undef;
+  CODE:
+    char*  src = SvPVX(inStr);
+    STRLEN len = SvCUR(inStr);
+    STRLEN packed = 0;
+    outStr = _minify_ascii(aTHX_ src, len, &packed);
+    if (outStr != NULL) {
+      SV* result = newSVpvn(outStr, packed);
+      RETVAL = result;
+      Safefree(outStr);
+    }
+    else {
+      croak("_minify_ascii returned NULL");
     }
   OUTPUT:
     RETVAL

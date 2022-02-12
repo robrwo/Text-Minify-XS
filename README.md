@@ -49,6 +49,12 @@ they may be significant.
 
 This is an alias for ["minify"](#minify).  It was added in v0.5.3.
 
+## minify\_ascii
+
+This is a version of ["minify"](#minify) that works on ASCII text. It was added in v0.5.3.
+
+If you are only processing ASCII text, then it should be faster.
+
 # KNOWN ISSUES
 
 ## Malformed UTF-8
