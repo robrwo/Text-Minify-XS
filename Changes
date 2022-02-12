@@ -1,6 +1,11 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Mention benchmarks.
+
+  [Other]
+  - Included a sample benchmark script.
 
 v0.5.4    2022-02-12 15:01:25+00:00 Europe/London (TRIAL RELEASE)
   [Documentation]

@@ -82,6 +82,7 @@ This is an alias for L</minify>.  It was added in v0.5.3.
 This is a version of L</minify> that works on ASCII text. It was added in v0.5.3.
 
 If you are only processing ASCII text, then it should be faster.
+Rudimentary benchmarks show it is twice as fast.
 
 =head1 KNOWN ISSUES
 
