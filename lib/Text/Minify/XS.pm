@@ -32,7 +32,7 @@ XSLoader::load( "Text::Minify::XS", $VERSION );
 =head1 DESCRIPTION
 
 This is a simple and fast text minifier that removes quickly extra
-whitespace from multi-line UTF-8 text.
+whitespace from multi-line text.
 
 =head1 prepend:EXPORTS
 

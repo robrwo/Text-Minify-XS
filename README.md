@@ -17,7 +17,7 @@ my $out = minify( $in );
 # DESCRIPTION
 
 This is a simple and fast text minifier that removes quickly extra
-whitespace from multi-line UTF-8 text.
+whitespace from multi-line text.
 
 # EXPORTS
 

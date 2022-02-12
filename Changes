@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Removed reference to UTF-8 from DESCRIPTION since there is now a
+    separate minify_ascii function.
 
 v0.5.3    2022-02-12 14:54:54+00:00 Europe/London (TRIAL RELEASE)
   [Enhancements]
