@@ -4,12 +4,14 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Add an actual DESCRIPTION section.
 
+  - Fix error in Changes.
+
 v0.5.2    2022-02-12 11:38:41+00:00 Europe/London
   [Enhancements]
   - Upgrade Devel::PPPort to 3.64.
 
   [Documentation]
-  - Update ABSTRACT and DESCRIPTION to make it clear what this does.
+  - Update ABSTRACT and EXPORTS to make it clear what this does.
 
   - Bump copyright year.
 
