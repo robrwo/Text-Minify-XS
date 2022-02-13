@@ -11,7 +11,7 @@
 #define isEOL(c) ((c >= 0xa) && (c <= 0xd ) || (c == 0x85))
 #define isEOL_UTF8(c) (isEOL(c) || c == 0x2028 || c == 0x2029)
 
-char* _minify_ascii(const char* src, STRLEN len, STRLEN* packed) {
+char* _minify_ascii(char* src, STRLEN len, STRLEN* packed) {
 
   char * dest;
 

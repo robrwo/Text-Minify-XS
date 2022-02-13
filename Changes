@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Bug Fixes]
+  - Remove incorrect const from parameter to _minify_ascii function.
+
   [Documentation]
   - Mention benchmarks.
 
