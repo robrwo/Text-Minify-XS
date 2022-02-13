@@ -13,7 +13,7 @@
 
 char* _minify_ascii(char* src, STRLEN len, STRLEN* packed) {
 
-  char * dest;
+  char* dest;
 
   Newx(dest, len + 1, char);
 
