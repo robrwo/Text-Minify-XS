@@ -4,7 +4,7 @@ Text::Minify::XS - remove indentation and trailing whitespace
 
 # VERSION
 
-version v0.5.6
+version v0.5.7
 
 # SYNOPSIS
 
