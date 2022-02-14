@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+
+v0.5.6    2022-02-14 09:55:26+00:00 Europe/London (TRIAL RELEASE)
   [Bug Fixes]
   - Fix parameter in _minify_ascii function, GH#9.
 
