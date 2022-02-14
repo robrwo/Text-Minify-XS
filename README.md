@@ -53,8 +53,12 @@ This is an alias for ["minify"](#minify).  It was added in v0.5.3.
 
 This is a version of ["minify"](#minify) that works on ASCII text. It was added in v0.5.3.
 
-If you are only processing ASCII text, then it should be faster.
-Rudimentary benchmarks show it is twice as fast.
+If you are only processing 8-bit text, then it should be faster.
+(Rudimentary benchmarks show it is twice as fast as ["minify"](#minify).)
+
+Unlike the ["minify"](#minify), if the input string has the UTF-8 flag set, the
+resulting string will not.  You should ensure the string is properly
+encoded.
 
 # KNOWN ISSUES
 

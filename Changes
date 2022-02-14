@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Updated documentation of minify_ascii to mention encoding issues.
 
 v0.5.6    2022-02-14 09:55:26+00:00 Europe/London (TRIAL RELEASE)
   [Bug Fixes]
