@@ -93,6 +93,7 @@
 \.rej$
 \.tdy$
 \.tmp$
+# ^\w$
 \.ttc$
 \.pmc$
 
