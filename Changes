@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Fix encoding of links in README.
+
   [Toolchain]
   - Removed use of MANIFEST.SKIP generator, since it caused problems
     with Module::CPANTS::Analyse (RT#141565).
