@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Toolchain]
+  - Removed use of MANIFEST.SKIP generator, since it caused problems
+    with Module::CPANTS::Analyse (RT#141565).
 
 v0.6.0    2022-02-15 14:23:40+00:00 Europe/London
   [Documentation]
