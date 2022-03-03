@@ -4,6 +4,9 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Fix encoding of links in README.
 
+  [Other]
+  - Use modern calling style for Exporter and XSLoader.
+
 v0.6.0    2022-02-15 14:23:40+00:00 Europe/London
   [Documentation]
   - Updated documentation of minify_ascii to mention encoding issues.

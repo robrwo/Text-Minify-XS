@@ -6,10 +6,9 @@ use v5.9.3;
 use strict;
 use warnings;
 
-require Exporter;
-require XSLoader;
+use Exporter 5.57 qw( import );
+use XSLoader;
 
-our @ISA = qw(Exporter);
 our @EXPORT_OK = qw(minify minify_utf8 minify_ascii);
 
 our $VERSION = 'v0.6.1';
