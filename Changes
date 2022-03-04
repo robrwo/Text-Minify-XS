@@ -7,6 +7,8 @@ Revision history for {{ $dist->name }}:
   [Other]
   - Use modern calling style for Exporter and XSLoader.
 
+  - Bump version of Devel::PPPort to 3.36.
+
 v0.6.0    2022-02-15 14:23:40+00:00 Europe/London
   [Documentation]
   - Updated documentation of minify_ascii to mention encoding issues.

@@ -26,7 +26,7 @@ on 'configure' => sub {
 };
 
 on 'develop' => sub {
-  requires "Devel::PPPort" => "3.64";
+  requires "Devel::PPPort" => "3.66";
   requires "Pod::Coverage::TrustPod" => "0";
   requires "Test::CleanNamespaces" => "0.15";
   requires "Test::EOF" => "0";
