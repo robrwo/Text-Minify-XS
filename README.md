@@ -99,6 +99,8 @@ whitespace/comment-removal modules on CPAN.  Some of them are:
 - [String::Util](https://metacpan.org/pod/String%3A%3AUtil)
 - [Text::Trim](https://metacpan.org/pod/Text%3A%3ATrim)
 
+Note that Perl v5.36 has the [builtin](https://metacpan.org/pod/builtin) `trim` function.
+
 This list does not include specialised template filters or plugins to
 web frameworks.
 
