@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Bug Fixes]
+  - Fix segfault when passed undef values, GH#10.
+
   [Other]
   - Bump version of Devel::PPPort to 3.68.
 
