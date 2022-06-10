@@ -151,7 +151,7 @@ whitespace/comment-removal modules on CPAN.  Some of them are:
 
 =back
 
-Note that Perl v5.36 has the L<builtin> C<trim> function.
+Note that Perl v5.36 has the C<builtin> C<trim> function.
 
 This list does not include specialised template filters or plugins to
 web frameworks.
