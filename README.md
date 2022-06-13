@@ -71,38 +71,8 @@ encoded as UTF-8.
 
 # SEE ALSO
 
-There are many string trimming and specialised
-whitespace/comment-removal modules on CPAN.  Some of them are:
-
-## CSS
-
-- [CSS::Minifier](https://metacpan.org/pod/CSS%3A%3AMinifier)
-- [CSS::Minifier::XS](https://metacpan.org/pod/CSS%3A%3AMinifier%3A%3AXS)
-- [CSS::Packer](https://metacpan.org/pod/CSS%3A%3APacker)
-
-## HTML
-
-- [HTML::Packer](https://metacpan.org/pod/HTML%3A%3APacker)
-
-## JavaScript
-
-- [JavaScript::Minifier](https://metacpan.org/pod/JavaScript%3A%3AMinifier)
-- [JavaScript::Minifier::XS](https://metacpan.org/pod/JavaScript%3A%3AMinifier%3A%3AXS)
-- [JavaScript::Packer](https://metacpan.org/pod/JavaScript%3A%3APacker)
-
-## Plain Text
-
-- [String::Strip](https://metacpan.org/pod/String%3A%3AStrip)
-- [String::Trim](https://metacpan.org/pod/String%3A%3ATrim)
-- String::Trim::Regex
-- [String::Trim::NonRegex](https://metacpan.org/pod/String%3A%3ATrim%3A%3ANonRegex)
-- [String::Util](https://metacpan.org/pod/String%3A%3AUtil)
-- [Text::Trim](https://metacpan.org/pod/Text%3A%3ATrim)
-
-Note that Perl v5.36 has the `builtin` `trim` function.
-
-This list does not include specialised template filters or plugins to
-web frameworks.
+There are many string trimming and specialised whitespace/comment-removal modules on CPAN.
+It is not practical to include such a list.
 
 # SOURCE
 
