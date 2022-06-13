@@ -4,6 +4,8 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Removed the similar modules from SEE ALSO.
 
+  - Other minor changes to documentation.
+
   [Toolchain]
   - Simplify XSLoader call.
 

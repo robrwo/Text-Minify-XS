@@ -36,7 +36,7 @@ It does the following:
 
 - removes leading whitespace (indentation),
 - removes trailing whitespace,
-- removes multiple newlines,
+- collapses multiple newlines,
 - and changes carriage returns to newlines.
 
 It does not recognise any form of markup, comments or text quoting.

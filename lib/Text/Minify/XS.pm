@@ -58,7 +58,7 @@ removes trailing whitespace,
 
 =item *
 
-removes multiple newlines,
+collapses multiple newlines,
 
 =item *
 
