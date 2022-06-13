@@ -11,7 +11,7 @@ use XSLoader;
 
 our @EXPORT_OK = qw(minify minify_utf8 minify_ascii);
 
-our $VERSION = 'v0.6.3';
+our $VERSION = 'v0.6.4';
 
 XSLoader::load( __PACKAGE__, $VERSION );
 

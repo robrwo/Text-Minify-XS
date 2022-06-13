@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+
+v0.6.3    2022-06-13 16:55:07+01:00 Europe/London
   [Documentation]
   - Removed the similar modules from SEE ALSO.
 
