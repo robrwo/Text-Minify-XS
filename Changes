@@ -1,10 +1,12 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Fix typo in Changes.
 
 v0.6.4    2022-06-28 21:53:49+01:00 Europe/London
   [Toolchain]
-  - Including a signature in the release.
+  - Sign release.
 
 v0.6.3    2022-06-13 16:55:07+01:00 Europe/London
   [Documentation]
