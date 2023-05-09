@@ -4,7 +4,7 @@ Text::Minify::XS - Remove indentation and trailing whitespace from multi-line te
 
 # VERSION
 
-version v0.6.6
+version v0.7.0
 
 # SYNOPSIS
 
@@ -62,9 +62,13 @@ encoded.
 
 # SUPPORT FOR OLDER PERL VERSIONS
 
-This module requires Perl v5.9.3 or later.
+Since v0.7.0, this module requires Perl v5.14 or later.
 
 Future releases may only support Perl versions released in the last ten years.
+
+If you need this module on Perl v5.9.3, please use one of the v0.6.x
+versions of this module.  Significant bug or security fixes may be
+backported to those versions.
 
 # KNOWN ISSUES
 
