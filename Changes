@@ -4,6 +4,8 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Bumped copyright year.
 
+  - Documented support policy for older Perls.
+
   [Other]
   - Updated MANIFEST.SKIP rules.
 

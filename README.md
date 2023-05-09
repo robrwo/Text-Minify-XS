@@ -60,6 +60,12 @@ Unlike the ["minify"](#minify), if the input string has the UTF-8 flag set, the
 resulting string will not.  You should ensure the string is properly
 encoded.
 
+# SUPPORT FOR OLDER PERL VERSIONS
+
+This module requires Perl v5.9.3 or later.
+
+Future releases may only support Perl versions released in the last ten years.
+
 # KNOWN ISSUES
 
 ## Malformed UTF-8
