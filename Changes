@@ -4,6 +4,8 @@ Revision history for {{ $dist->name }}:
   [Tests]
   - Added author test for Changes.
 
+  - Switched package used for the release manifest.
+
 v0.7.1    2023-10-28 09:27:23+01:00 Europe/London
   [Tests]
   - Migrated to Test2.
