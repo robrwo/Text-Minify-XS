@@ -51,3 +51,8 @@ jobs:
         RELEASE_TESTING: 1
       run: |
         make test
+
+    - name: dzil
+      uses: jonasbn/github-action-perl-dist-zilla@0.4.0
+      with:
+         dzil-arguments: 'test --all'
