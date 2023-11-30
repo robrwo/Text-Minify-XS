@@ -33,6 +33,7 @@ jobs:
       run: |
         cpanm -v
         cpanm --notest --installdeps .
+        cpanm --notest Test::LeakTrace
 
     - name: Show Errors on Ubuntu
       if:  ${{ failure() && startsWith( matrix.runner, 'ubuntu-')}}
