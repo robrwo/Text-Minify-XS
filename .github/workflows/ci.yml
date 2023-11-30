@@ -55,4 +55,5 @@ jobs:
     - name: dzil
       uses: jonasbn/github-action-perl-dist-zilla@0.4.0
       with:
+         dzil-arguments: 'authordeps --missing | cpanm'
          dzil-arguments: 'test --all'
