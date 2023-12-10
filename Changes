@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Toolchain]
+  - Removed use of Dist::Zilla::Plugin::Generate::ManifestSkip.
+
   [Other]
   - Added GitHub Actions for running tests.
 
