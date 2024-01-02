@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Updated copyright year.
+
   [Toolchain]
   - Removed use of Dist::Zilla::Plugin::Generate::ManifestSkip.
 
