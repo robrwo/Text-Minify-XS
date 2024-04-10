@@ -10,7 +10,7 @@ use XSLoader;
 
 our @EXPORT_OK = qw(minify minify_utf8 minify_ascii);
 
-our $VERSION = 'v0.7.4';
+our $VERSION = 'v0.7.5';
 
 XSLoader::load( __PACKAGE__, $VERSION );
 
