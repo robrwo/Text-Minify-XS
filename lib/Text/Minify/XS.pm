@@ -91,11 +91,7 @@ encoded.
 
 Since v0.7.0, this module requires Perl v5.14 or later.
 
-Future releases may only support Perl versions released in the last ten years.
-
-If you need this module on Perl v5.9.3, please use one of the v0.6.x
-versions of this module.  Significant bug or security fixes may be
-backported to those versions.
+Future releases may only support Perl versions released in the last ten (10) years.
 
 =head1 KNOWN ISSUES
 

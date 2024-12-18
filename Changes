@@ -4,6 +4,8 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Added security policy.
 
+  - Updated Perl version support policy.
+
   [Tests]
   - Added and improved author tests.
 
