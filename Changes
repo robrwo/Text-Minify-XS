@@ -5,9 +5,7 @@ Revision history for {{ $dist->name }}:
   - Added security policy.
 
   [Tests]
-  - Added author test for XS::Check.
-
-  - Added author tests for CVEs.
+  - Added more author tests.
 
 v0.7.4    2024-04-10 13:26:32+01:00 Europe/London
   [Documentation]
