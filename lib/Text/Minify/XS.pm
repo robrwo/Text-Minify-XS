@@ -15,6 +15,7 @@ our $VERSION = 'v0.7.5';
 XSLoader::load( __PACKAGE__, $VERSION );
 
 {
+    ## no critic (TestingAndDebugging::ProhibitNoStrict)
     no strict 'refs';
     *minify_utf8 = \&minify;
 }
