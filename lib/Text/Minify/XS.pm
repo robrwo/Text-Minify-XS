@@ -111,4 +111,11 @@ encoded as UTF-8.
 There are many string trimming and specialised whitespace/comment-removal modules on CPAN.
 It is not practical to include such a list.
 
+=head1 append:BUGS
+
+=head2 Reporting Security Vulnerabilities
+
+Security issues should not be reported on the bugtracker website. Please see F<SECURITY.md> for instructions how to
+report security vulnerabilities
+
 =cut
