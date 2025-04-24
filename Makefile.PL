@@ -27,7 +27,7 @@ my %WriteMakefileArgs = (
     "warnings" => 0
   },
   "TEST_REQUIRES" => {
-    "Encode" => "2.85",
+    "Encode" => "3.12",
     "File::Spec" => 0,
     "Module::Metadata" => "1.000015",
     "Test2::Tools::Exception" => 0,
@@ -44,7 +44,7 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "Encode" => "2.85",
+  "Encode" => "3.12",
   "Exporter" => "5.57",
   "ExtUtils::MakeMaker" => "7.22",
   "File::Spec" => 0,

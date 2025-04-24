@@ -13,7 +13,7 @@ on 'build' => sub {
 };
 
 on 'test' => sub {
-  requires "Encode" => "2.85";
+  requires "Encode" => "3.12";
   requires "File::Spec" => "0";
   requires "Module::Metadata" => "1.000015";
   requires "Test2::Tools::Exception" => "0";
