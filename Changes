@@ -13,6 +13,9 @@ Revision history for {{ $dist->name }}:
   [Other]
   - Increase the minimum version of Encode used for tests [CVE-2021-36770].
 
+  [Tests]
+  - Added more author tests.
+
 v0.7.5    2024-12-18 14:34:20+00:00 Europe/London
   [Documentation]
   - Added security policy.
