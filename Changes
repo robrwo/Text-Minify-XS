@@ -10,7 +10,7 @@ Revision history for {{ $dist->name }}:
 
   - Update copyright year.
 
-  [Other]
+  [Security]
   - Increase the minimum version of Encode used for tests [CVE-2021-36770].
 
   [Tests]
