@@ -37,7 +37,6 @@ on 'develop' => sub {
   requires "Software::Security::Policy::Individual" => "0.10";
   requires "Test2::Require::AuthorTesting" => "0";
   requires "Test::CPAN::Changes" => "0.500002";
-  requires "Test::CVE" => "0.08";
   requires "Test::CleanNamespaces" => "0.15";
   requires "Test::DistManifest" => "0";
   requires "Test::EOF" => "0";
