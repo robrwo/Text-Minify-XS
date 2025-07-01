@@ -102,6 +102,11 @@ output.  In extreme cases it may throw an exception in order to avoid
 memory overflows. You should ensure that the input string is properly
 encoded as UTF-8.
 
+=head2 Byte Order Marks
+
+The Byte Order Mark (BOM) at the beginning of a file will not be removed. That is because the minifier does not know
+this is the beginning of a file or not.
+
 =head1 SEE ALSO
 
 There are many string trimming and specialised whitespace/comment-removal modules on CPAN.

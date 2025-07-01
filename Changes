@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Noted a known issue with the Byte Order Mark.
+
   [Tests]
   - Updated author tests.
 
