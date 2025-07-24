@@ -22,6 +22,12 @@ XSLoader::load( __PACKAGE__, $VERSION );
 
 1;
 
+=begin :prelude
+
+=for stopwords BOM minify minifier
+
+=end :prelude
+
 =head1 SYNOPSIS
 
   use Text::Minify::XS qw/ minify /;
@@ -103,7 +109,7 @@ this is the beginning of a file or not.
 
 =begin :security_considerations
 
-=head1 SECURITY CONSIDERSATIONS
+=head1 SECURITY CONSIDERATIONS
 
 Passing malformed UTF-8 characters may throw an exception, which in some cases could lead to a denial of service if
 untrusted input is passed to L</minify_utf8>.  See L</KNOWN ISSUES>.

@@ -9,7 +9,7 @@ Revision history for {{ $dist->name }}:
   - Added a SECURITY CONSIDERATIONS section.
 
   [Tests]
-  - Updated author tests.
+  - Added author tests.
 
 v0.7.6    2025-05-18 12:43:44+01:00 Europe/London
   [Documentation]
