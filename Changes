@@ -8,6 +8,8 @@ Revision history for {{ $dist->name }}:
 
   - Added a SECURITY CONSIDERATIONS section.
 
+  - Fixed typos.
+
   [Tests]
   - Added author tests.
 

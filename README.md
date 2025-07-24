@@ -56,7 +56,7 @@ This is a version of ["minify"](#minify) that works on ASCII text. It was added 
 If you are only processing 8-bit text, then it should be faster.
 (Rudimentary benchmarks show it is twice as fast as ["minify"](#minify).)
 
-Unlike the ["minify"](#minify), if the input string has the UTF-8 flag set, the
+Unlike ["minify"](#minify), if the input string has the UTF-8 flag set, the
 resulting string will not.  You should ensure the string is properly
 encoded.
 
