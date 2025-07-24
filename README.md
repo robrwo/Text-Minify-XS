@@ -103,6 +103,8 @@ then see `SECURITY.md` for instructions how to report security vulnerabilities.
 The development version is on github at [https://github.com/robrwo/Text-Minify-XS](https://github.com/robrwo/Text-Minify-XS)
 and may be cloned from [git://github.com/robrwo/Text-Minify-XS.git](git://github.com/robrwo/Text-Minify-XS.git)
 
+See `CONTRIBUTING.md` for more information.
+
 # AUTHOR
 
 Robert Rothenberg <rrwo@cpan.org>
