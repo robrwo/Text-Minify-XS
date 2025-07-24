@@ -101,6 +101,11 @@ encoded as UTF-8.
 The Byte Order Mark (BOM) at the beginning of a file will not be removed. That is because the minifier does not know
 this is the beginning of a file or not.
 
+=head1 SECURITY CONSIDERSATIONS
+
+Passing malformed UTF-8 characters may throw an exception, which in some cases could lead to a denial of service if
+untrusted input is passed to L</minify_utf8>.  See L</KNOWN ISSUES>.
+
 =head1 SEE ALSO
 
 There are many string trimming and specialised whitespace/comment-removal modules on CPAN.

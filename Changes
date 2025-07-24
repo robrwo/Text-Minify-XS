@@ -6,6 +6,8 @@ Revision history for {{ $dist->name }}:
 
   - Added a SUPPORT section and merged BUGS into it.
 
+  - Added a SECURITY CONSIDERATIONS section.
+
   [Tests]
   - Updated author tests.
 
