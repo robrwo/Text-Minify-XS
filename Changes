@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+
+v0.7.7    2025-07-24 18:51:34+01:00 Europe/London
   [Documentation]
   - Noted a known issue with the Byte Order Mark.
 
