@@ -79,16 +79,6 @@ this is the beginning of a file or not.
 Passing malformed UTF-8 characters may throw an exception, which in some cases could lead to a denial of service if
 untrusted input is passed to ["minify\_utf8"](#minify_utf8).  See ["KNOWN ISSUES"](#known-issues).
 
-# SEE ALSO
-
-There are many string trimming and specialised whitespace/comment-removal modules on CPAN.
-It is not practical to include such a list.
-
-# SOURCE
-
-The development version is on github at [https://github.com/robrwo/Text-Minify-XS](https://github.com/robrwo/Text-Minify-XS)
-and may be cloned from [git://github.com/robrwo/Text-Minify-XS.git](git://github.com/robrwo/Text-Minify-XS.git)
-
 # SUPPORT
 
 Only the latest version of this module will be supported.
@@ -107,6 +97,11 @@ feature.
 
 If the bug you are reporting has security implications which make it inappropriate to send to a public issue tracker,
 then see `SECURITY.md` for instructions how to report security vulnerabilities.
+
+# SOURCE
+
+The development version is on github at [https://github.com/robrwo/Text-Minify-XS](https://github.com/robrwo/Text-Minify-XS)
+and may be cloned from [git://github.com/robrwo/Text-Minify-XS.git](git://github.com/robrwo/Text-Minify-XS.git)
 
 # AUTHOR
 
