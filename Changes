@@ -4,6 +4,8 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Noted a known issue with the Byte Order Mark.
 
+  - Added a SUPPORT section and merged BUGS into it.
+
   [Tests]
   - Updated author tests.
 

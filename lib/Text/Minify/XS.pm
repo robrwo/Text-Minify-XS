@@ -87,12 +87,6 @@ Unlike the L</minify>, if the input string has the UTF-8 flag set, the
 resulting string will not.  You should ensure the string is properly
 encoded.
 
-=head1 SUPPORT FOR OLDER PERL VERSIONS
-
-Since v0.7.0, this module requires Perl v5.14 or later.
-
-Future releases may only support Perl versions released in the last ten (10) years.
-
 =head1 KNOWN ISSUES
 
 =head2 Malformed UTF-8
@@ -112,11 +106,18 @@ this is the beginning of a file or not.
 There are many string trimming and specialised whitespace/comment-removal modules on CPAN.
 It is not practical to include such a list.
 
-=head1 append:BUGS
+=head1 prepend:SUPPORT
 
-=head2 Reporting Security Vulnerabilities
+Only the latest version of this module will be supported.
 
-Security issues should not be reported on the bugtracker website. Please see F<SECURITY.md> for instructions how to
-report security vulnerabilities.
+Since v0.7.0, this module requires Perl v5.14 or later.
+Future releases may only support Perl versions released in the last ten (10) years.
+
+=head2 Reporting Bugs and Submitting Feature Requests
+
+=head1 append:SUPPORT
+
+If the bug you are reporting has security implications which make it inappropriate to send to a public issue tracker,
+then see F<SECURITY.md> for instructions how to report security vulnerabilities.
 
 =cut
