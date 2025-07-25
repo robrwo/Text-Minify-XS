@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Other]
+  - Improved Dist::Zilla configuration.
 
 v0.7.7    2025-07-24 18:51:34+01:00 Europe/London
   [Documentation]
