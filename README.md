@@ -4,7 +4,7 @@ Text::Minify::XS - Remove indentation and trailing whitespace from multi-line te
 
 # VERSION
 
-version v0.7.7
+version v0.7.8
 
 # SYNOPSIS
 
