@@ -33,7 +33,9 @@ on 'configure' => sub {
 
 on 'develop' => sub {
   requires "Devel::PPPort" => "3.68";
+  requires "Dist::Zilla::Plugin::UsefulReadme" => "v0.1.2";
   requires "Pod::Coverage::TrustPod" => "0";
+  requires "Pod::Markdown::Github" => "0";
   requires "Software::Security::Policy::Individual" => "0.10";
   requires "Test2::Require::AuthorTesting" => "0";
   requires "Test2::Tools::Basic" => "1.302200";
