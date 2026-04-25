@@ -6,6 +6,8 @@ Revision history for {{ $dist->name }}:
 
   - Removed separate INSTALL file.
 
+  - Updated copyright year.
+
   [Toolchain]
   - Improved Dist::Zilla configuration.
 
