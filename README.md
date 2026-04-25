@@ -24,6 +24,7 @@ Changes for version v0.7.8 (2025-08-05)
     - Removed separate INSTALL file.
 - Toolchain
     - Improved Dist::Zilla configuration.
+    - Stopped using Module::Signature for signing modules.
 
 See the `Changes` file for more details.
 
