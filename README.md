@@ -75,6 +75,11 @@ dzil install --install-command="cpan ."
 
 For more information, see [How to install CPAN modules](https://www.cpan.org/modules/INSTALL.html).
 
+# SECURITY CONSIDERATIONS
+
+Passing malformed UTF-8 characters may throw an exception, which in some cases could lead to a denial of service if
+untrusted input is passed to ["minify\_utf8"](#minify_utf8).  See ["KNOWN ISSUES"](#known-issues).
+
 # SUPPORT
 
 Only the latest version of this module will be supported.
