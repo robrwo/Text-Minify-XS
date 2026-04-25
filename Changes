@@ -10,6 +10,8 @@ Revision history for {{ $dist->name }}:
 
   - Updated copyright year.
 
+  - Add doap.xml to the distribution.
+
   [Toolchain]
   - Improved Dist::Zilla configuration.
 
