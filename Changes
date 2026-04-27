@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Enhancements]
+  - Improved XS.xs by using appropriate isSPACE variants.
+
   [Documentation]
   - Updated contact email address.
 

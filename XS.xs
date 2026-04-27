@@ -40,7 +40,7 @@ char* _minify_ascii(pTHX_ char* src, STRLEN len, STRLEN* packed) {
     src ++;
     len --;
 
-    if (leading && !isSPACE(c))
+    if (leading && !isSPACE_L1(c))
       leading = NULL;
 
     if (!leading) {
@@ -50,7 +50,7 @@ char* _minify_ascii(pTHX_ char* src, STRLEN len, STRLEN* packed) {
         if ( c == '\r' ) c = '\n'; /* Normalise EOL */
         leading = ptr;
       }
-      else if (isSPACE(c)) {
+      else if (isSPACE_L1(c)) {
         if (!trailing) trailing = ptr;
       }
       else {
