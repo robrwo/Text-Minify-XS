@@ -11,8 +11,6 @@
 #define isEOL(c) ((c >= 0xa) && (c <= 0xd ) || (c == 0x85))
 #define isEOL_UTF8(c) (isEOL(c) || c == 0x2028 || c == 0x2029)
 
-// isutf8 space function?
-
 char* _minify_ascii(pTHX_ char* src, STRLEN len, STRLEN* packed) {
 
   char* dest;
