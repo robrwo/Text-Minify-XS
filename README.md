@@ -23,6 +23,8 @@ Changes for version v0.7.9 (2026-04-27)
     - Improved XS.xs by using appropriate isSPACE variants.
 - Documentation
     - Updated contact email address.
+- Tests
+    - Moved more author tests into xt.
 
 See the `Changes` file for more details.
 
