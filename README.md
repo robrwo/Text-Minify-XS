@@ -17,14 +17,10 @@ whitespace from multi-line text.
 
 # RECENT CHANGES
 
-Changes for version v0.7.9 (2026-04-27)
+Changes for version v0.7.10 (2026-05-11)
 
-- Enhancements
-    - Improved XS.xs by using appropriate isSPACE variants.
 - Documentation
-    - Updated contact email address.
-- Tests
-    - Moved more author tests into xt.
+    - Removed CONTRIBUTING.md due to changes in AI policies.
 
 See the `Changes` file for more details.
 
